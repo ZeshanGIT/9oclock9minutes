@@ -22,10 +22,6 @@
             </intent-filter>
         </activity>
         <receiver android:name=".AlarmService" android:exported="true">
-            <intent-filter>
-                <action android:name="mypackage.START_ALARM" >
-                </action>
-            </intent-filter>
         </receiver>
     </application>
 

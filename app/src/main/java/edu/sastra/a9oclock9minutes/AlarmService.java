@@ -29,11 +29,7 @@ public class AlarmService extends BroadcastReceiver {
 
     private void theActualJob(Context context) {
         Log.i("MYTAG","ACTUAL JOB STARTED");
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context);
-        mBuilder.setContentTitle("Notification Alert, Click Me!");
-        mBuilder.setContentText("Hi, This is Android Notification Detail!");
-        NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        mNotificationManager.notify(0,mBuilder.build());
+
         Toast.makeText(context, "Actual Job Started !", Toast.LENGTH_SHORT).show();
         final Camera cam = Camera.open();
         android.hardware.Camera.Parameters p = cam.getParameters();
