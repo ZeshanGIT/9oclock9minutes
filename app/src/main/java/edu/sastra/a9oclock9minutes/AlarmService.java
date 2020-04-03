@@ -1,5 +1,7 @@
 package edu.sastra.a9oclock9minutes;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +10,8 @@ import android.hardware.camera2.CameraManager;
 import android.os.Build;
 import android.os.Handler;
 import androidx.annotation.RequiresApi;
+
+import java.util.Calendar;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class AlarmService extends BroadcastReceiver {
@@ -40,7 +44,7 @@ public class AlarmService extends BroadcastReceiver {
                     e.printStackTrace();
                 }
             }
-        },120000);
+        },540000);
 
     }
 
