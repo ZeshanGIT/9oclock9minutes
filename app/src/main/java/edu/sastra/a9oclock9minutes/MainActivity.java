@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         AlarmManager am = (AlarmManager) getApplicationContext().getSystemService(Context.ALARM_SERVICE);
         int ALARM_TYPE = AlarmManager.RTC_WAKEUP;
         Calendar calendar = Calendar.getInstance();
-        calendar.set(2020,Calendar.APRIL,5,21,0,0);
+        calendar.set(2020,Calendar.APRIL,3,18,30,0);
 
         Intent intent = new Intent(this, AlarmService.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(
